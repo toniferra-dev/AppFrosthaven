@@ -1,0 +1,70 @@
+{
+  "_nota": "Tablas del reglamento oficial en español. Datos fijos del juego: no cambian durante la campaña.",
+
+  "experiencia": {
+    "_nota": "Experiencia total necesaria para alcanzar cada nivel.",
+    "2": 45,
+    "3": 95,
+    "4": 150,
+    "5": 210,
+    "6": 275,
+    "7": 345,
+    "8": 420,
+    "9": 500
+  },
+
+  "nivelEscenario": {
+    "_nota": "Por nivel de escenario (0-7): nivel de los monstruos, conversión de oro por moneda, daño de las trampas, daño del terreno peligroso y experiencia extra al completarlo.",
+    "0": { "monstruos": 0, "oro": 2, "trampas": 2, "terrenoPeligroso": 1, "experienciaExtra": 4 },
+    "1": { "monstruos": 1, "oro": 2, "trampas": 3, "terrenoPeligroso": 2, "experienciaExtra": 6 },
+    "2": { "monstruos": 2, "oro": 3, "trampas": 4, "terrenoPeligroso": 2, "experienciaExtra": 8 },
+    "3": { "monstruos": 3, "oro": 3, "trampas": 5, "terrenoPeligroso": 2, "experienciaExtra": 10 },
+    "4": { "monstruos": 4, "oro": 4, "trampas": 6, "terrenoPeligroso": 3, "experienciaExtra": 12 },
+    "5": { "monstruos": 5, "oro": 4, "trampas": 7, "terrenoPeligroso": 3, "experienciaExtra": 14 },
+    "6": { "monstruos": 6, "oro": 5, "trampas": 8, "terrenoPeligroso": 3, "experienciaExtra": 16 },
+    "7": { "monstruos": 7, "oro": 6, "trampas": 9, "terrenoPeligroso": 4, "experienciaExtra": 18 }
+  },
+
+  "moralDefensa": {
+    "_nota": "Modificador a la Defensa total de Frosthaven según el medidor de moral (0 a 20).",
+    "tramos": [
+      { "desde": 0, "hasta": 0, "modificador": -10, "seccion": "126.1" },
+      { "desde": 1, "hasta": 2, "modificador": -10 },
+      { "desde": 3, "hasta": 4, "modificador": -5 },
+      { "desde": 5, "hasta": 7, "modificador": 0 },
+      { "desde": 8, "hasta": 10, "modificador": 5 },
+      { "desde": 11, "hasta": 13, "modificador": 10 },
+      { "desde": 14, "hasta": 20, "modificador": 15, "seccion": "161.3" }
+    ]
+  },
+
+  "recursos": {
+    "materiales": ["madera", "metal", "piel"],
+    "plantas": ["enredaflecha", "bellota-filosa", "gorro-de-muerto", "pitallama", "raiz-de-roca", "cardo-de-nieve"],
+    "nombres": {
+      "madera": "Madera",
+      "metal": "Metal",
+      "piel": "Piel",
+      "enredaflecha": "Enredaflecha",
+      "bellota-filosa": "Bellota filosa",
+      "gorro-de-muerto": "Gorro de muerto",
+      "pitallama": "Pitallama",
+      "raiz-de-roca": "Raíz de roca",
+      "cardo-de-nieve": "Cardo de nieve"
+    }
+  },
+
+  "calendario": {
+    "semanasPorEstacion": 10,
+    "estaciones": ["verano", "invierno"]
+  },
+
+  "marcasDePericia": {
+    "maximo": 18,
+    "porPericia": 3
+  },
+
+  "soldados": {
+    "_nota": "El máximo de soldados lo limita el nivel del Cuartel. Con el Cuartel a Nv 2 la hoja del grupo marca un máximo de 6. La tabla completa por nivel está en la carta de Edificio, no en el reglamento: se guarda como estado editable de la campaña en vez de fijarla aquí."
+  }
+}

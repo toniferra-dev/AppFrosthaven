@@ -1,0 +1,213 @@
+{
+  "_nota": "Catálogo de clases extraído de las hojas de personaje del grupo. Las pericias y maestrías son idénticas para todos los personajes de una misma clase, por eso viven aquí y no en cada ficha. 'casillas' es cuántas veces puede obtenerse la pericia; 'enlazadas' significa que hay que marcar todas las casillas para obtenerla una sola vez (en las hojas se dibujan apiladas en vertical). 'mazoBase' son las 20 cartas iniciales del mazo de Modificadores de ataque; el tamaño real se deriva de las pericias marcadas. 'pvPorNivel' queda pendiente de rellenar desde las tarjetas de personaje.",
+
+  "estandarte-humana": {
+    "nombre": "Estandarte Humana",
+    "color": "#eab308",
+    "mano": 12,
+    "mazoBase": 20,
+    "pvPorNivel": null,
+    "pericias": [
+      { "texto": "Sustituye una Carta -1 por una Carta Escudo 1, ↩", "casillas": 3, "enlazadas": false },
+      { "texto": "Sustituye una Carta +0 por una Carta +1 \"Añade +1 Ataque por cada aliado adyacente al Objetivo\"", "casillas": 2, "enlazadas": false },
+      { "texto": "Añade una Carta +1, Desarmado", "casillas": 2, "enlazadas": false },
+      { "texto": "Añade una Carta +2, Empujón 1", "casillas": 2, "enlazadas": false },
+      { "texto": "Añade dos Cartas +1, ↩", "casillas": 2, "enlazadas": false },
+      { "texto": "Añade dos Cartas Curación 1, Personal, ↩", "casillas": 2, "enlazadas": false },
+      { "texto": "Ignora los Efectos -1 de los Objetos y retira una Carta -1", "casillas": 1, "enlazadas": false },
+      { "texto": "Al final de cada uno de tus Descansos Largos, otorga Movimiento 2 a un Aliado a Alcance 3 o menos", "casillas": 1, "enlazadas": false },
+      { "texto": "Siempre que abras una Puerta con una Capacidad de Movimiento, añade Movimiento 3", "casillas": 1, "enlazadas": false },
+      { "texto": "Una vez por Escenario, durante un Turno, añade Escudo 2 durante la Ronda en curso", "casillas": 3, "enlazadas": true }
+    ],
+    "maestrias": [
+      "Muro Inquebrantable: ataca al menos a 3 Enemigos con 3 Capacidades distintas de Ataque con efecto de Zona",
+      "Realiza una Capacidad de Invocación de Bandera en tu primer turno y mantén la Bandera viva y a Alcance 3 o menos de ti durante todo el Escenario"
+    ]
+  },
+
+  "errante-inox": {
+    "nombre": "Errante Inox",
+    "color": "#c0392b",
+    "mano": 12,
+    "mazoBase": 20,
+    "pvPorNivel": null,
+    "pericias": [
+      { "texto": "Sustituye una Carta -1 por una Carta +1", "casillas": 3, "enlazadas": false },
+      { "texto": "Sustituye una Carta -2 por una Carta +0", "casillas": 1, "enlazadas": false },
+      { "texto": "Sustituye una Carta +1 por dos Cartas +0 \"Mueve 1 de tus Fichas de Personaje un espacio para atrás\"", "casillas": 2, "enlazadas": false },
+      { "texto": "Sustituye dos Cartas +0 por dos Cartas +0, Perforante 3, ↩", "casillas": 1, "enlazadas": false },
+      { "texto": "Sustituye dos Cartas +0 por dos Cartas +0, Empujón 2, ↩", "casillas": 1, "enlazadas": false },
+      { "texto": "Añade una Carta +3", "casillas": 1, "enlazadas": false },
+      { "texto": "Añade una Carta +2, Inmovilización", "casillas": 2, "enlazadas": false },
+      { "texto": "Añade dos Cartas +0, Curación 1 Personal, ↩", "casillas": 1, "enlazadas": false },
+      { "texto": "Ignora los Efectos de los Escenarios y añade una Carta +1", "casillas": 1, "enlazadas": false },
+      { "texto": "Ignora los Efectos -1 de los Objetos y añade una Carta +1", "casillas": 1, "enlazadas": false },
+      { "texto": "Cada vez que realices un Descanso Largo puedes mover una de tus Fichas de Personaje un espacio hacia atrás", "casillas": 2, "enlazadas": true },
+      { "texto": "Puedes llevar un Objeto adicional de Mano a cada Escenario", "casillas": 1, "enlazadas": false },
+      { "texto": "Al final de cada Escenario puedes descartar hasta 2 Cartas de Botín, excepto la de Objeto Aleatorio, para robar ese mismo número de Cartas de Botín nuevas", "casillas": 1, "enlazadas": false }
+    ],
+    "maestrias": [
+      "Termina un Escenario con tus Fichas de Personaje en los últimos espacios de 4 Capacidades Continuas",
+      "Nunca realices una capacidad de Movimiento o Ataque con un valor inferior a 4 y realiza al menos una Capacidad de Movimiento o Ataque cada ronda"
+    ]
+  },
+
+  "esculpehuesos-eterida": {
+    "nombre": "EsculpeHuesos Etérida",
+    "color": "#3fa535",
+    "mano": 10,
+    "mazoBase": 20,
+    "pvPorNivel": null,
+    "pericias": [
+      { "texto": "Sustituye una Carta -1 por una Carta +0, Maldición", "casillas": 2, "enlazadas": false },
+      { "texto": "Sustituye una Carta -1 por una Carta +0 Veneno", "casillas": 2, "enlazadas": false },
+      { "texto": "Sustituye una Carta -2 por una Carta +0", "casillas": 1, "enlazadas": false },
+      { "texto": "Sustituye una Carta +0 por una Carta +1, \"Mata a la Invocación atacante para añadir, en vez de lo anterior, +4\"", "casillas": 3, "enlazadas": false },
+      { "texto": "Añade tres Cartas Curación 1, Personal, ↩", "casillas": 2, "enlazadas": false },
+      { "texto": "Añade una Carta +2, Tierra/Oscuridad", "casillas": 3, "enlazadas": false },
+      { "texto": "Ignora los Efectos del Escenario y añade dos Cartas +1", "casillas": 1, "enlazadas": false },
+      { "texto": "Justo antes de cada uno de tus Descansos, puedes matar a 1 de tus Invocaciones para realizar Bendición, Personal", "casillas": 1, "enlazadas": false },
+      { "texto": "Una vez por Escenario, cuando un Personaje Aliado vaya a quedar Agotado por sufrir Heridas, puedes sufrir 2 Heridas para reducir sus Heridas a 1 en vez de quedar Agotado", "casillas": 1, "enlazadas": false },
+      { "texto": "Al comienzo de cada Escenario, puedes jugar una Carta de Nv 1 de tu mano para realizar una Acción de Invocación de la Carta", "casillas": 2, "enlazadas": true }
+    ],
+    "maestrias": [
+      "Mata al menos a 15 de tus Invocaciones",
+      "Juega una Invocación en tu primer Turno, consigue que la Invocación mate al menos a 6 Enemigos y mantenla con vida durante todo el Escenario"
+    ]
+  },
+
+  "guia-de-animas-valrath": {
+    "nombre": "Guía de Ánimas Valrath",
+    "color": "#b0447a",
+    "mano": 9,
+    "mazoBase": 20,
+    "pvPorNivel": null,
+    "pericias": [
+      { "texto": "Retira dos Cartas -1", "casillas": 1, "enlazadas": false },
+      { "texto": "Sustituye una Carta -2 por una Carta +0", "casillas": 1, "enlazadas": false },
+      { "texto": "Sustituye una Carta -1 por una Carta +1", "casillas": 3, "enlazadas": false },
+      { "texto": "Sustituye una Carta +0 por una Carta +1, Maldición", "casillas": 3, "enlazadas": false },
+      { "texto": "Añade una Carta +2, Oscuridad", "casillas": 2, "enlazadas": false },
+      { "texto": "Añade una Carta Desarmado, ↩ y una Carta Confusión, ↩", "casillas": 2, "enlazadas": false },
+      { "texto": "Añade dos Cartas Curación 1, Objetivo: un Aliado, ↩", "casillas": 2, "enlazadas": false },
+      { "texto": "Ignora los Efectos de los Escenarios", "casillas": 1, "enlazadas": false },
+      { "texto": "Siempre que realices un Descanso Largo puedes mover 1 Sombra hasta 3 Hexágonos", "casillas": 1, "enlazadas": false },
+      { "texto": "Siempre que realices un Descanso Largo puedes consumir Oscuridad para realizar Confusión, Maldición, Alcance 2, como si estuvieras ocupando un Hexágono con Sombra", "casillas": 1, "enlazadas": false },
+      { "texto": "Mientras ocupes un Hexágono con Sombra, todos los Ataques que te tomen como Objetivo tienen Desventaja", "casillas": 1, "enlazadas": false }
+    ],
+    "maestrias": [
+      "Retira 7 Sombras en una sola Ronda",
+      "Pon o Retira al menos 1 Sombra en cada Ronda"
+    ]
+  },
+
+  "cosechador-de-dolor": {
+    "nombre": "Cosechador de Dolor",
+    "color": "#c2417f",
+    "mano": 10,
+    "mazoBase": 20,
+    "pvPorNivel": null,
+    "pericias": [
+      { "texto": "Retira dos Cartas -1", "casillas": 2, "enlazadas": false },
+      { "texto": "Sustituye una Carta -2 por una Carta -2, Maldición x2", "casillas": 1, "enlazadas": false },
+      { "texto": "Sustituye una Carta -1 por una Carta +0, Desarmado", "casillas": 1, "enlazadas": false },
+      { "texto": "Sustituye una Carta +0 por una Carta +1, Fuego/Viento", "casillas": 3, "enlazadas": false },
+      { "texto": "Sustituye una Carta +0 por una Carta +2", "casillas": 1, "enlazadas": false },
+      { "texto": "Sustituye tres Cartas +1 por tres Cartas +1, Maldición", "casillas": 1, "enlazadas": false },
+      { "texto": "Añade tres Cartas Curación 1, Personal, ↩", "casillas": 2, "enlazadas": false },
+      { "texto": "Añade una Carta +0, \"Añade +1 por cada Estado Negativo que tengas\"", "casillas": 2, "enlazadas": false },
+      { "texto": "Ignora los Efectos del Escenario y añade dos Cartas +1", "casillas": 1, "enlazadas": false },
+      { "texto": "Cada Ronda en la que realices un Descanso Largo, puedes ignorar todos los Estados Negativos que tengas; si lo haces, no se podrán retirar durante esa ronda", "casillas": 1, "enlazadas": false },
+      { "texto": "Siempre que este Personaje quede Agotado, realiza primero Maldición, objetivo Todos, Alcance 3", "casillas": 1, "enlazadas": false },
+      { "texto": "Aumenta tu valor máximo de Puntos de Vida en +5", "casillas": 2, "enlazadas": true }
+    ],
+    "maestrias": [
+      "Consigue que otras figuras sufran un total de al menos 40 Daño en una misma ronda",
+      "Empieza un turno con Herida, Frágil, Perdición, Veneno, Inmovilización, Desarme, Aturdimiento y Confusión"
+    ]
+  },
+
+  "trampero": {
+    "nombre": "Trampero",
+    "color": "#f2836e",
+    "mano": 9,
+    "mazoBase": 20,
+    "pvPorNivel": null,
+    "pericias": [
+      { "texto": "Retira una Carta -2", "casillas": 1, "enlazadas": false },
+      { "texto": "Sustituye una Carta -1 por una Carta +0 \"Crea una Trampa Curación 2 en un Hexágono vacío adyacente al Objetivo\"", "casillas": 2, "enlazadas": false },
+      { "texto": "Sustituye una Carta -1 por una Carta +0 \"Crea una Trampa Daño 1 en un Hexágono vacío adyacente al Objetivo\"", "casillas": 3, "enlazadas": false },
+      { "texto": "Sustituye dos Cartas +0 por dos Cartas +0 \"Añade Daño 2 o Curación 2 a una Trampa a Distancia 2 o menos de ti\"", "casillas": 3, "enlazadas": false },
+      { "texto": "Sustituye dos Cartas +1 por dos Cartas +2, Inmovilización", "casillas": 2, "enlazadas": false },
+      { "texto": "Añade dos Cartas \"Añade Empujón 2 o Tirón 2\", ↩", "casillas": 3, "enlazadas": false },
+      { "texto": "Ignora los Efectos del Escenario", "casillas": 1, "enlazadas": false },
+      { "texto": "Cada vez que realices un Descanso Largo puedes crear una Trampa Daño 1 en un Hexágono vacío adyacente", "casillas": 1, "enlazadas": false },
+      { "texto": "Siempre que entres en un Hexágono con una Trampa puedes elegir no activarla", "casillas": 1, "enlazadas": false },
+      { "texto": "Al comienzo de cada Escenario puedes crear una Trampa Daño 2 en un Hexágono vacío adyacente", "casillas": 1, "enlazadas": false }
+    ],
+    "maestrias": [
+      "Ten una Trampa de Daño en el Tablero con un valor de al menos 20",
+      "Mueve a Enemigos por 7 o más Trampas con una misma Capacidad"
+    ]
+  },
+
+  "dagacentella-quatryl": {
+    "nombre": "Dagacentella Quatryl",
+    "color": "#29a3e0",
+    "mano": 10,
+    "mazoBase": 20,
+    "pvPorNivel": null,
+    "pericias": [
+      { "texto": "Retira una Carta -2", "casillas": 1, "enlazadas": false },
+      { "texto": "Sustituye una Carta -1 por una Carta +1", "casillas": 2, "enlazadas": false },
+      { "texto": "Sustituye una Carta -1 por una Carta +0, Herida", "casillas": 2, "enlazadas": false },
+      { "texto": "Sustituye una Carta +0 por una Carta +1, Inmovilización", "casillas": 2, "enlazadas": false },
+      { "texto": "Sustituye una Carta +0 por una Carta \"Pon esta carta en tu zona activa. En tu próximo Ataque, descarta esta Carta para añadir Ataque +2, ↩\"", "casillas": 3, "enlazadas": false },
+      { "texto": "Sustituye dos Cartas +1 por dos Cartas +2", "casillas": 1, "enlazadas": false },
+      { "texto": "Añade una Carta -1 \"Obtén un Token de Tiempo\"", "casillas": 2, "enlazadas": false },
+      { "texto": "Añade una Carta +2, Regeneración, Personal, ↩", "casillas": 2, "enlazadas": false },
+      { "texto": "Siempre que realices un Descanso Corto, puedes gastar un Objeto no gastado sin activar sus efectos para Reponer un Objeto diferente gastado", "casillas": 1, "enlazadas": false },
+      { "texto": "Al comienzo de tu primer Turno de cada Escenario puedes realizar Movimiento 3", "casillas": 1, "enlazadas": false },
+      { "texto": "Siempre que vayas a recibir Inmovilizado, ignóralo", "casillas": 1, "enlazadas": false }
+    ],
+    "maestrias": [
+      "Declara Rápido durante 7 Rondas Consecutivas",
+      "Consigue que nunca te tomen como objetivo de un Ataque"
+    ]
+  },
+
+  "marea-restallante": {
+    "nombre": "Marea Restallante",
+    "color": "#f0705a",
+    "mano": 12,
+    "mazoBase": 20,
+    "pvPorNivel": null,
+    "pericias": [
+      { "texto": "Sustituye una Carta -1 por una Carta Perforante 3, ↩", "casillas": 2, "enlazadas": false },
+      { "texto": "Sustituye una Carta +1 por una Carta +0, +1 Objetivo", "casillas": 2, "enlazadas": false },
+      { "texto": "Sustituye una Carta +0 por una Carta +1, Escudo 1, ↩", "casillas": 2, "enlazadas": false },
+      { "texto": "Añade dos Cartas +1, \"Si has realizado una Acción de Marea esta Ronda, +2 en vez de lo anterior\"", "casillas": 2, "enlazadas": false },
+      { "texto": "Añade una Carta +2, Confusión", "casillas": 2, "enlazadas": false },
+      { "texto": "Añade una Carta +1, Desarme", "casillas": 1, "enlazadas": false },
+      { "texto": "Añade dos Cartas Curación 1, Personal, ↩", "casillas": 2, "enlazadas": false },
+      { "texto": "Ignora los Efectos -1 de los Objetos y siempre que vayas a sufrir Torpe, evítalo", "casillas": 1, "enlazadas": false },
+      { "texto": "Siempre que declares un Descanso Largo durante la selección de Cartas obtén Escudo 1 durante esa Ronda", "casillas": 1, "enlazadas": false },
+      { "texto": "Obtén Ventaja en todos los Ataques realizados mientras ocupes Hexágonos de Agua o elijas como objetivo a Enemigos que ocupen Hexágonos de Agua", "casillas": 1, "enlazadas": false }
+    ],
+    "maestrias": [
+      "No sufras nunca Daño por Ataques siendo el Objetivo de al menos 5 Ataques",
+      "Al comienzo de cada uno de tus Descansos, consigue tener más Mareas activas que Cartas en tu Pila de Descartes"
+    ]
+  },
+
+  "puno-helado": {
+    "nombre": "Puño Helado",
+    "color": "#38bdf8",
+    "mano": null,
+    "mazoBase": 20,
+    "pvPorNivel": null,
+    "pericias": [],
+    "maestrias": [],
+    "_pendiente": "Clase de un personaje ya retirado; no hay ficha entre el material aportado. Rellenar pericias y maestrías desde la hoja de personaje si se vuelve a jugar."
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "_nota": "Escenarios que aparecen en la hoja del grupo, con su estado actual. No es el listado completo de los 138 del juego: se irá completando según se desbloqueen. 'requiere' son los objetos de transporte necesarios para acceder (barco, trineo, escalada). 'fallidos' es el número de intentos fallidos anotados con X.",
+
+  "leyenda": {
+    "estados": ["superado", "disponible", "bloqueado"],
+    "requisitos": { "barco": "Barco", "trineo": "Trineo", "escalada": "Equipo de Escalada" },
+    "misiones": {
+      "avanzada-eterida": "Misión Personal: Avanzada Etérida (Fuego, Hielo, Oscuridad, Viento)",
+      "en-busca-del-roble": "Misión Personal: En Busca del Roble"
+    }
+  },
+
+  "escenarios": [
+    { "n": 0,   "nombre": "Aullidos en la Nieve", "estado": "superado" },
+    { "n": 1,   "nombre": "Una ciudad en Llamas", "estado": "superado" },
+    { "n": 2,   "nombre": "Vigilando a los Algox", "estado": "superado", "fallidos": 1 },
+    { "n": 3,   "nombre": "Ofensiva Algox", "estado": "bloqueado" },
+    { "n": 4,   "nombre": "Corazón de Hielo", "estado": "superado" },
+    { "n": 6,   "nombre": "Avalancha", "estado": "superado", "fallidos": 2 },
+    { "n": 7,   "nombre": "El Filo del Mundo", "estado": "superado" },
+    { "n": 8,   "nombre": "Trinchera de Cristal", "estado": "superado" },
+    { "n": 11,  "nombre": "En la Cima de la Montaña del Desprecio Helado", "estado": "disponible", "requiere": ["escalada"] },
+    { "n": 12,  "nombre": "Entrada del Templo", "estado": "disponible" },
+    { "n": 13,  "nombre": "Fiordo Congelado", "estado": "superado", "fallidos": 2 },
+    { "n": 14,  "nombre": "Bajíos Escabrosos", "estado": "superado", "requiere": ["barco"] },
+    { "n": 15,  "nombre": "La Antigua Torre", "estado": "superado" },
+    { "n": 16,  "nombre": "Ascensor Abandonado", "estado": "superado" },
+    { "n": 21,  "nombre": "El Reino de la Escarcha Perpetua", "estado": "disponible", "requiere": ["trineo"] },
+    { "n": 22,  "nombre": "Hielo Flotante", "estado": "superado", "requiere": ["barco"] },
+    { "n": 23,  "nombre": "Sótano de la Torre", "estado": "disponible" },
+    { "n": 24,  "nombre": "Subiendo la Torre", "estado": "disponible" },
+    { "n": 25,  "nombre": "Túneles Oxidados", "estado": "bloqueado" },
+    { "n": 26,  "nombre": "Biblioteca Quatryl", "estado": "superado" },
+    { "n": 32,  "nombre": "El nido de los Cuervos", "estado": "superado" },
+    { "n": 33,  "nombre": "Árboles Descongelados", "estado": "superado" },
+    { "n": 36,  "nombre": "Conductos enterrados", "estado": "bloqueado" },
+    { "n": 37,  "nombre": "La Lengua Muerta", "estado": "superado", "fallidos": 1 },
+    { "n": 42,  "nombre": "La Fosa Marina sin Sol", "estado": "superado", "fallidos": 1 },
+    { "n": 44,  "nombre": "Centro Neurálgico", "estado": "superado" },
+    { "n": 50,  "nombre": "Descenso Explosivo", "estado": "disponible", "fallidos": 1 },
+    { "n": 58,  "nombre": "El Corazón del Huérfano", "estado": "bloqueado" },
+    { "n": 59,  "nombre": "El levantamiento de los autómatas", "estado": "superado" },
+    { "n": 65,  "nombre": "Sólidos Fundamentos", "estado": "superado", "mision": "avanzada-eterida" },
+    { "n": 66,  "nombre": "Núcleos Elementales", "estado": "superado", "mision": "avanzada-eterida" },
+    { "n": 67,  "nombre": "Sintonía con los Núcleos", "estado": "superado", "mision": "avanzada-eterida" },
+    { "n": 68,  "nombre": "La Faz del Tormento", "estado": "superado", "mision": "avanzada-eterida" },
+    { "n": 69,  "nombre": "Suelo Sagrado", "estado": "superado", "mision": "en-busca-del-roble" },
+    { "n": 70,  "nombre": "El Roble Verdadero", "estado": "superado", "mision": "en-busca-del-roble" },
+    { "n": 104, "nombre": "Ruinas del Solsticio", "estado": "superado", "requiere": ["trineo"] },
+    { "n": 107, "nombre": "Mi imperio privado", "estado": "superado", "requiere": ["escalada"] },
+    { "n": 111, "nombre": "Cueva de Hielo", "estado": "disponible", "requiere": ["trineo"] },
+    { "n": 112, "nombre": "Criado por lobos", "estado": "superado" },
+    { "n": 114, "nombre": "Trabajo Explosivo", "estado": "superado" },
+    { "n": 115, "nombre": "Problemas de Puntales", "estado": "superado" },
+    { "n": 116, "nombre": "Guardias de Caravana", "estado": "disponible", "fallidos": 1 },
+    { "n": 118, "nombre": "Nigromancia acechadora", "estado": "disponible", "requiere": ["trineo"] },
+    { "n": 120, "nombre": "Reyerta controlada", "estado": "disponible" },
+    { "n": 126, "nombre": "Joseph el León", "estado": "disponible" },
+    { "n": 136, "nombre": "Escondite Abandonado", "estado": "superado", "requiere": ["barco"], "fallidos": 1 }
+  ]
+}
