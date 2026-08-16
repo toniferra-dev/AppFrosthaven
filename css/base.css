@@ -1,0 +1,198 @@
+/* ==========================================================================
+   Frosthaven — hoja base: fuentes, design tokens, reset y utilidades
+   Autor: Toni Ferrà — https://toniferra.com · © 2026 Todos los derechos reservados
+   Metodología: BEM (bloque__elemento--modificador) + utilidades con prefijo u-
+   ========================================================================== */
+
+/* ---------- Fuentes auto-alojadas (RGPD: sin peticiones a Google Fonts) ---------- */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fuentes/poppins-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fuentes/poppins-500.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fuentes/poppins-600.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fuentes/poppins-700.woff2") format("woff2");
+}
+
+/* ---------- Design tokens ---------- */
+:root {
+  /* Marca */
+  --color-brand: #6366f1;        /* indigo-500 */
+  --color-brand-strong: #4f46e5; /* indigo-600 */
+  --color-brand-a11y: #5f62f0;   /* indigo con contraste AA (4.68:1) sobre texto blanco */
+  --color-brand-soft: #eef2ff;   /* indigo-50, fondos de realce */
+
+  /* Neutros (escala slate) */
+  --color-surface: #f8fafc;
+  --color-surface-alt: #f1f5f9;
+  --color-surface-card: #ffffff;
+  --color-border: #e2e8f0;
+  --color-border-strong: #cbd5e1;
+  --color-text: #1e293b;
+  --color-text-muted: #64748b;
+  --color-text-soft: #94a3b8;
+  --color-dark: #0f172a;
+
+  /* Semánticos de estado (contraste AA sobre blanco verificado por cálculo) */
+  --color-ok: #15803d;      /* green-700  · 4,96:1 */
+  --color-ok-soft: #dcfce7;
+  --color-warn: #b45309;    /* amber-700  · 4,89:1 */
+  --color-warn-soft: #fef3c7;
+  --color-danger: #b91c1c;  /* red-700    · 6,45:1 */
+  --color-danger-soft: #fee2e2;
+  --color-info: #0369a1;    /* sky-700    · 5,89:1 */
+  --color-info-soft: #e0f2fe;
+
+  /* Recursos del juego: solo como punto de color, nunca como único portador de información */
+  --color-oro: #ca8a04;
+  --color-madera: #a16207;
+  --color-metal: #64748b;
+  --color-piel: #b45309;
+
+  /* Color de clase: cada ficha lo sobrescribe con el suyo */
+  --color-clase: var(--color-brand);
+
+  /* Tipografía */
+  --font-sans: "Poppins", "Helvetica Neue", Arial, sans-serif;
+  --texto-xs: 0.75rem;
+  --texto-sm: 0.875rem;
+  --texto-base: 1rem;
+  --texto-lg: 1.125rem;
+  --texto-xl: 1.375rem;
+  --texto-2xl: 1.75rem;
+
+  /* Espaciado y forma */
+  --espacio-1: 0.25rem;
+  --espacio-2: 0.5rem;
+  --espacio-3: 0.75rem;
+  --espacio-4: 1rem;
+  --espacio-5: 1.5rem;
+  --espacio-6: 2rem;
+  --espacio-7: 3rem;
+  --radio: 0.5rem;
+  --radio-lg: 0.75rem;
+  --sombra: 0 1px 2px rgb(15 23 42 / 0.06), 0 1px 3px rgb(15 23 42 / 0.1);
+  --sombra-alta: 0 4px 6px rgb(15 23 42 / 0.05), 0 10px 15px rgb(15 23 42 / 0.1);
+
+  /* Movimiento: lento y suave, sin rebote */
+  --transicion: 200ms ease;
+  --ancho-max: 75rem;
+}
+
+/* ---------- Reset ---------- */
+*,
+*::before,
+*::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--texto-base);
+  line-height: 1.6;
+  color: var(--color-text);
+  background: var(--color-surface);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, svg { display: block; max-width: 100%; }
+button, input, select, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; background: none; border: 0; }
+table { border-collapse: collapse; width: 100%; }
+
+h1, h2, h3, h4 { line-height: 1.25; font-weight: 600; }
+h1 { font-size: var(--texto-2xl); }
+h2 { font-size: var(--texto-xl); }
+h3 { font-size: var(--texto-lg); }
+
+a { color: var(--color-brand-strong); }
+
+/* Foco visible consistente en todo elemento interactivo (WCAG 2.4.7) */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--color-brand);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ---------- Utilidades ---------- */
+.u-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Enlace de salto al contenido: visible solo al recibir el foco */
+.u-skip-link {
+  position: absolute;
+  top: var(--espacio-2);
+  left: var(--espacio-2);
+  z-index: 100;
+  padding: var(--espacio-2) var(--espacio-4);
+  background: var(--color-surface-card);
+  color: var(--color-brand-strong);
+  border-radius: var(--radio);
+  box-shadow: var(--sombra-alta);
+  transform: translateY(-200%);
+  transition: transform var(--transicion);
+}
+.u-skip-link:focus { transform: translateY(0); }
+
+.u-contenedor {
+  width: 100%;
+  max-width: var(--ancho-max);
+  margin-inline: auto;
+  padding-inline: var(--espacio-4);
+}
+
+/* Contenedor de desbordamiento para tablas anchas en móvil */
+.u-scroll-x {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.u-numero {
+  font-variant-numeric: tabular-nums;
+}
