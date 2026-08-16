@@ -1,0 +1,35 @@
+/* ==========================================================================
+   Frosthaven — bloques de las páginas de tabla (escenarios y ciudad)
+   Autor: Toni Ferrà — https://toniferra.com
+   ========================================================================== */
+
+.campo__control--compacto {
+  padding: var(--espacio-1) var(--espacio-2);
+  font-size: var(--texto-sm);
+  max-width: 9rem;
+}
+
+.tabla__numero .campo__control--compacto {
+  max-width: 4.5rem;
+  text-align: end;
+}
+
+/* Los escenarios bloqueados siguen leyéndose, solo pierden peso visual.
+   El estado se indica además en el selector, no solo con el color. */
+.is-atenuada td,
+.is-atenuada th { color: var(--color-text-muted); }
+
+.listado__marcas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espacio-1);
+}
+
+/* ---------- Ciudad ---------- */
+.edificio__nombre { font-weight: 500; }
+
+.edificio__detalle {
+  display: block;
+  font-size: var(--texto-xs);
+  color: var(--color-text-muted);
+}
