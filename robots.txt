@@ -1,0 +1,3 @@
+# Aplicación privada de seguimiento de campaña. No debe indexarse.
+User-agent: *
+Disallow: /

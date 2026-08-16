@@ -1,0 +1,16 @@
+/* EQUIPO */
+Autor: Toni Ferrà
+Web: https://toniferra.com
+Blog: https://toniferra.substack.com
+Ubicación: España
+
+/* SITIO */
+Nombre: Seguimiento de campaña de Frosthaven
+Estándares: HTML5, CSS3, JavaScript
+Componentes: Poppins (auto-alojada), Supabase
+Software: Hecho a mano, sin framework ni proceso de compilación
+
+/* NOTA */
+Frosthaven es un juego de mesa de Cephalofair Games. Esta aplicación es una
+herramienta privada del grupo para llevar el seguimiento de su partida y no
+guarda relación con la editorial.
