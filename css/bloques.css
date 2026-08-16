@@ -50,7 +50,12 @@
   transition: background var(--transicion), color var(--transicion);
 }
 
-.nav__enlace:hover { background: rgb(255 255 255 / 0.08); color: #fff; }
+/* Los estilos de hover se limitan a los dispositivos con puntero real. En
+   táctil, Safari trata el primer toque sobre un elemento con :hover como si
+   fuera un hover y no activa el enlace hasta el segundo toque. */
+@media (hover: hover) {
+  .nav__enlace:hover { background: rgb(255 255 255 / 0.08); color: #fff; }
+}
 
 .nav__enlace.is-activa {
   background: rgb(99 102 241 / 0.2);
@@ -195,7 +200,9 @@
   transition: background var(--transicion), border-color var(--transicion);
 }
 
-.boton:hover { background: var(--color-surface-alt); }
+@media (hover: hover) {
+  .boton:hover { background: var(--color-surface-alt); }
+}
 
 .boton--principal {
   background: var(--color-brand-a11y);
@@ -203,7 +210,9 @@
   color: #fff;
 }
 
-.boton--principal:hover { background: var(--color-brand-strong); }
+@media (hover: hover) {
+  .boton--principal:hover { background: var(--color-brand-strong); }
+}
 
 .boton[disabled] { opacity: 0.5; cursor: not-allowed; }
 
@@ -227,7 +236,9 @@
   transition: border-color var(--transicion);
 }
 
-.campo__control:hover { border-color: var(--color-text-soft); }
+@media (hover: hover) {
+  .campo__control:hover { border-color: var(--color-text-soft); }
+}
 
 .campo__control--numero { width: 100%; max-width: 7rem; }
 
@@ -253,7 +264,9 @@
 }
 
 .tabla tbody tr:last-child td { border-bottom: 0; }
-.tabla tbody tr:hover { background: var(--color-surface-alt); }
+@media (hover: hover) {
+  .tabla tbody tr:hover { background: var(--color-surface-alt); }
+}
 .tabla__numero { text-align: end; font-variant-numeric: tabular-nums; }
 
 /* ---------- Barra de progreso ---------- */

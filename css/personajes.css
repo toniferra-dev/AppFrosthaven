@@ -43,7 +43,9 @@
   transition: background var(--transicion);
 }
 
-.personajes__enlace:hover { background: var(--color-surface-alt); }
+@media (hover: hover) {
+  .personajes__enlace:hover { background: var(--color-surface-alt); }
+}
 
 .personajes__enlace.is-activa {
   background: var(--color-brand-soft);
@@ -120,7 +122,9 @@
   transition: background var(--transicion), border-color var(--transicion);
 }
 
-.casillas__casilla:hover { border-color: var(--color-brand); }
+@media (hover: hover) {
+  .casillas__casilla:hover { border-color: var(--color-brand); }
+}
 
 .casillas__casilla.is-marcada {
   background: var(--color-clase);
