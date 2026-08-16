@@ -1,0 +1,100 @@
+<!doctype html>
+<!-- Hecho a mano por Toni Ferrà -->
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Panel de campaña · Frosthaven</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Panel de seguimiento de la campaña de Frosthaven del grupo.">
+  <link rel="author" href="humans.txt">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/bloques.css">
+  <link rel="stylesheet" href="css/panel.css">
+  <script src="js/config.js"></script>
+  <script src="vendor/supabase.js" defer></script>
+  <script src="js/almacen.js" defer></script>
+  <script src="js/reglas.js" defer></script>
+  <script src="js/navegacion.js" defer></script>
+  <script src="js/panel.js" defer></script>
+</head>
+<body>
+  <a class="u-skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="cabecera">
+    <div class="u-contenedor cabecera__interior">
+      <a class="cabecera__marca" href="index.html">
+        <svg class="icono" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 2v20M12 2 8 6M12 2l4 4M12 22l-4-4M12 22l4-4"/>
+          <path d="m3.5 7 17 10M3.5 7l.5 5.5M3.5 7 8.7 5.6M20.5 17l-.5-5.5M20.5 17l-5.2 1.4"/>
+          <path d="m20.5 7-17 10M20.5 7 20 12.5M20.5 7l-5.2-1.4M3.5 17l.5-5.5M3.5 17l5.2 1.4"/>
+        </svg>
+        Frosthaven
+      </a>
+      <nav class="nav" aria-label="Secciones">
+        <a class="nav__enlace" href="index.html" data-nav="panel">Panel</a>
+        <a class="nav__enlace" href="personajes.html" data-nav="personajes">Personajes</a>
+        <a class="nav__enlace" href="escenarios.html" data-nav="escenarios">Escenarios</a>
+        <a class="nav__enlace" href="ciudad.html" data-nav="ciudad">Ciudad</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="u-contenedor pagina" id="contenido">
+    <div class="pagina__titulo">
+      <div>
+        <h1>Panel de campaña</h1>
+        <p class="pagina__subtitulo" data-panel="momento">Cargando…</p>
+      </div>
+      <p class="pagina__subtitulo" data-panel="conexion"></p>
+    </div>
+
+    <div class="aviso aviso--peligro" data-panel="error" hidden>
+      <svg class="icono aviso__icono" viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="12" cy="12" r="10"/><path d="M12 8v5M12 16h.01"/>
+      </svg>
+      <span data-panel="error-texto"></span>
+    </div>
+
+    <!-- Estado de Frosthaven -->
+    <section class="seccion" aria-labelledby="titulo-ciudad">
+      <h2 class="seccion__titulo" id="titulo-ciudad">Frosthaven</h2>
+      <div class="rejilla rejilla--estrecha" data-panel="ciudad"></div>
+    </section>
+
+    <!-- Recursos -->
+    <section class="seccion" aria-labelledby="titulo-recursos">
+      <h2 class="seccion__titulo" id="titulo-recursos">Recursos</h2>
+      <div class="tarjeta">
+        <div class="tarjeta__cuerpo u-scroll-x">
+          <table class="tabla" data-panel="recursos">
+            <caption class="u-visually-hidden">
+              Reserva de Frosthaven, reservas personales y total del grupo
+            </caption>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Personajes -->
+    <section class="seccion" aria-labelledby="titulo-personajes">
+      <h2 class="seccion__titulo" id="titulo-personajes">Personajes activos</h2>
+      <div class="rejilla" data-panel="personajes"></div>
+    </section>
+
+    <!-- Escenarios disponibles -->
+    <section class="seccion" aria-labelledby="titulo-escenarios">
+      <h2 class="seccion__titulo" id="titulo-escenarios">Escenarios disponibles</h2>
+      <div class="tarjeta">
+        <div class="tarjeta__cuerpo">
+          <ul class="listado" data-panel="escenarios"></ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="u-contenedor pie">
+    <p>Seguimiento de campaña de <em>Frosthaven</em>. Hecho a mano por Toni Ferrà.</p>
+  </footer>
+</body>
+</html>
